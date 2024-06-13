@@ -123,7 +123,7 @@ class MainScreen(FloatLayout):
     def run_http_server(self, host_ip, port, directory):
         try:
             handler = CustomHTTPRequestHandler
-            os.chdir(directory)  # Change the current working directory to the specified directory
+            os.chdir(directory)  # Change the current working directory to the specified directory l
             with socketserver.TCPServer((host_ip, port), handler) as httpd:
                 log_message = f"Serving {directory} at {host_ip}:{port}"
                 App.get_running_app().log_screen_widget.update_log(log_message)
