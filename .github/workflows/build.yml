@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Updated to use the latest Ubuntu version
+    runs-on: ubuntu-latestggggggg  # Updated to use the latest Ubuntu version
 
     steps:
       - name: Checkout code
